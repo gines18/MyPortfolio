@@ -54,13 +54,14 @@ body{
 /* main photo */
 .photo{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.9fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin-top: 81px;
     margin-bottom: 220px;
     grid-template-areas: 
-    " myface myface myface . "
-    " myface myface myface . "
+    " myface myface . "
+    " myface myface . "
+    "myface myface  AboutMeText1 "
     
     ;
 }
@@ -68,8 +69,16 @@ body{
 
 .myface{
     grid-area: myface;
-    width: 75%;
+    width: 100%;
+  
     
+}
+
+.AboutMeText1{
+grid-area: AboutMeText1;
+color: var(--color);
+font-size: 25px;
+
 }
 
 
@@ -128,7 +137,7 @@ body{
 
 .two{
     grid-area: two;
-    background-image: url(./img/seo-2394237__340.webp) ;
+    background-image: url(./img/seo-2394237__340.webp);
     background-repeat: no-repeat;
     background-size: cover;
    }
@@ -174,22 +183,35 @@ body{
 /* about me */
 
 .About-Me{
+ 
     margin-top: 80px;
+      color: var(--color);
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-areas: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr ;
+grid-template-areas: 1fr 1fr 1fr;
 grid-template-areas: 
-". . . ."
-". . . ."
-
+"   second-photo ."
+"   second-photo  AboutMeText "
+"   second-photo ."
 
 ;
+}
+
+.second-photo{
+    height: 900px;
+    width: 100%;
+    grid-area: second-photo;
+    background-image: url(./img/Image.png);
+    background-repeat: no-repeat;
+    background-size: 600px;
+}
+
+.AboutMeText{
+    display: flex;
+grid-area: AboutMeText;
+align-items: center;
+margin: 40px;
+font-size: 30px;
 
 }
 
-.About-Me{
-    margin-top: 80px;
-    color: var(--color);
-
-
-}
