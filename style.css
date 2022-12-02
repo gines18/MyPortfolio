@@ -120,7 +120,7 @@ body{
 .gold1{
     height: 300px;
     grid-area: gold1;
-    background-image: url(/img/shopping-5217035__340.png);
+    background-image: url(./img/shopping-5217035__340.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,14 +128,14 @@ body{
 
 .two{
     grid-area: two;
-    background-image: url(/img/seo-2394237__340.webp) ;
+    background-image: url(./img/seo-2394237__340.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
    }
  
 .three{
     grid-area: three;
-    background-image: url(/img/blog-793047__340.jpg);
+    background-image: url(./img/blog-793047__340.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* font-size: 40px; */
@@ -146,14 +146,14 @@ body{
 
 .four{
     grid-area: four;
-    background-image: url(/img/carousel-1684591__340.png);
+    background-image: url(./img/carousel-1684591__340.png);
     background-repeat: no-repeat;
     background-size: cover;
     }
 
 .five{
         grid-area: five;
-        background-image: url(/img/facebook-424521__340.jpg);
+        background-image: url(./img/facebook-424521__340.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         }
