@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
 }
@@ -52,6 +56,7 @@ body {
 .navbar-right ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
 }
 
 .navbar-right ul li {
@@ -60,6 +65,11 @@ body {
     color: var(--color);
     font-size: 25px;
 }
+.navbar-right ul li a {
+    text-decoration: none;
+    color: var(--color);
+}
+
 
 /* main photo */
 .photo {
@@ -107,6 +117,7 @@ body {
 }
 /* Menu items/sections */
 .text {
+    padding-top: 80px;
     margin-top: 80px;
     color: var(--color);
     margin-left: 80px;
@@ -128,35 +139,41 @@ body {
     ;
 }
 
-.one .two .three .four .five{
+.one {
+    height: 300px;
+    grid-area: one;
+    background-image: url(./img/socialmedia.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.one {
-    height: 300px;
-    grid-area: one;
-    background-image: url(./img/shopping-5217035__340.png);
-}
-
 .two {
     grid-area: two;
-    background-image: url(./img/seo-2394237__340.webp);
+    background-image: url(./img/travel.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 .three {
     grid-area: three;
-    background-image: url(./img/blog-793047__340.jpg);
+    background-image: url(./img/hairdreser.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .four {
     grid-area: four;
-    background-image: url(./img/carousel-1684591__340.png);
+    background-image: url(./img/masterchef.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .five {
     grid-area: five;
-    background-image: url(./img/facebook-424521__340.jpg);
+    background-image: url(./img/pilot.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Portfolio div {
@@ -173,6 +190,9 @@ body {
     background-color: var(--background-color);
     border-radius: 5% 5%;
     width: 260px;
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
 }
 
 .one p {
@@ -245,7 +265,7 @@ body {
 }
 
 .Skills-img img{
-    height: 80px;
+    height: 70px;
 }
 
 
