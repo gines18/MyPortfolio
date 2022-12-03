@@ -1,43 +1,51 @@
-body{
+body {
     background-color: black;
 }
 
-:root{
+:root {
     --color: white;
+    --background-color: white;
 }
+
 /* navbar */
-.menu{
+.menu {
     display: grid;
-    grid-template-columns: 1fr 1fr  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    position: fixed;
+    top: 0px;
+    background-color: black;
     justify-content: center;
     align-items: center;
-    grid-template-areas: 
-    " . navbar-left . . navbar-right ."
-     
+    grid-template-areas:
+        " . navbar-left . . navbar-right ."
+
     ;
 }
+
 /* menu left */
-.navbar-left{
+.navbar-left {
     grid-area: navbar-left;
 }
 
 .navbar-left ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
 }
 
-.navbar-left ul li a{
+.navbar-left ul li a {
     display: flex;
     margin: 10px;
     color: var(--color);
     font-size: 25px;
     text-decoration: none;
+
 }
 
 /* menu right */
 
-.navbar-right{
+.navbar-right {
     grid-area: navbar-right;
 }
 
@@ -46,44 +54,45 @@ body{
     flex-direction: row;
 }
 
-.navbar-right ul li{
+.navbar-right ul li {
     display: flex;
     margin: 10px;
     color: var(--color);
     font-size: 25px;
 }
+
 /* main photo */
-.photo{
+.photo {
     display: grid;
     grid-template-columns: 0.5fr 0.9fr 1fr;
     grid-template-rows: 1fr 0.5fr 1fr;
     margin-top: 81px;
     margin-bottom: 220px;
-    grid-template-areas: 
-    " myface myface . "
-    " myface myface . "
-    "myface myface  AboutMeText1 "
-    
+    grid-template-areas:
+        " myface myface . "
+        " myface myface . "
+        "myface myface  AboutMeText1 "
+
     ;
 }
 
-
-.myface{
+.myface {
     grid-area: myface;
     width: 100%;
-  
-    
 }
 
-.AboutMeText1{
-grid-area: AboutMeText1;
-color: var(--color);
-font-size: 25px;
+.AboutMeText1 {
+    grid-area: AboutMeText1;
+    color: var(--color);
+    font-size: 25px;
+}
+
+.AboutMeText1 h2 {
+    text-decoration: wavy underline lime;
 
 }
 
-
- .introduction{
+.introduction {
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
@@ -94,40 +103,38 @@ font-size: 25px;
     position: absolute;
     left: 740px;
     top: 500px;
-    
- }
 
- .introduction h1{
-   font-size: 45px;
-   color: var(--color);
- }
+}
 
+.introduction h1 {
+    font-size: 45px;
+    color: var(--color);
+}
 
-.text{
+.text {
     margin-top: 80px;
     color: var(--color);
     margin-left: 80px;
 }
 
- /* Portfolio */
+/* Portfolio */
 
-
-.Portfolio{
+.Portfolio {
     display: grid;
- margin-top: 40px;
- margin-left: 80px;
- margin-right: 80px;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
-   grid-template-areas: 
-" gold1 gold1 three three "
-" gold1 gold1    four    five  "
-" two     two    four    five  " 
- ;
+    grid-template-areas:
+        " gold1 gold1 three three "
+        " gold1 gold1    four    five  "
+        " two     two    four    five  "
+    ;
 }
 
-.gold1{
+.gold1 {
     height: 300px;
     grid-area: gold1;
     background-image: url(./img/shopping-5217035__340.png);
@@ -136,69 +143,92 @@ font-size: 25px;
     background-position: center;
 }
 
-.two{
+.two {
     grid-area: two;
     background-image: url(./img/seo-2394237__340.webp);
     background-repeat: no-repeat;
     background-size: cover;
-   }
- 
-.three{
+}
+
+.three {
     grid-area: three;
     background-image: url(./img/blog-793047__340.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* font-size: 40px; */
-    border: 1px solid red;
-    
-
 }
 
-.four{
+.four {
     grid-area: four;
     background-image: url(./img/carousel-1684591__340.png);
     background-repeat: no-repeat;
     background-size: cover;
-    }
 
-.five{
-        grid-area: five;
-        background-image: url(./img/facebook-424521__340.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
+}
 
-        .Portfolio div{
+.five {
+    grid-area: five;
+    background-image: url(./img/facebook-424521__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-            font-size: 30px;
-            background-color: blue;
-            border: 1px solid red;   
-        }
+.Portfolio div {
+    font-size: 30px;
+    background-color: blue;
+}
 
-.Portfolio p{
-
-    background-color: white;
+.Portfolio p {
+    border-radius: 5% 5%;
     width: 250px;
 }
 
-/* about me */
-
-.About-Me{
- 
-    margin-top: 80px;
-      color: var(--color);
-display: grid;
-grid-template-columns: 1fr 1fr ;
-grid-template-areas: 1fr 1fr 1fr;
-grid-template-areas: 
-"   second-photo ."
-"   second-photo  AboutMeText "
-"   second-photo ."
-
-;
+.gold1 p {
+    background-color: var(--background-color);
+    border-radius: 5% 5%;
+    width: 260px;
 }
 
-.second-photo{
+.two p {
+    background-color: var(--background-color);
+    border-radius: 5% 5%;
+    width: 173px;
+}
+
+.three p {
+    background-color: var(--background-color);
+    border-radius: 5% 5%;
+    width: 130px;
+}
+
+.four p {
+    background-color: var(--background-color);
+    border-radius: 5% 5%;
+    width: 146px;
+}
+
+.five p {
+    background-color: var(--background-color);
+    border-radius: 5% 5%;
+    width: 60px;
+}
+
+/* about me */
+.About-Me {
+
+    margin-top: 80px;
+    color: var(--color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr 1fr 1fr;
+    grid-template-areas:
+        "   second-photo ."
+        "   second-photo  AboutMeText "
+        "   second-photo ."
+
+    ;
+}
+
+.second-photo {
     height: 900px;
     width: 100%;
     grid-area: second-photo;
@@ -207,12 +237,11 @@ grid-template-areas:
     background-size: 600px;
 }
 
-.AboutMeText{
+.AboutMeText {
     display: flex;
-grid-area: AboutMeText;
-align-items: center;
-margin: 40px;
-font-size: 30px;
+    grid-area: AboutMeText;
+    align-items: center;
+    margin: 40px;
+    font-size: 30px;
 
 }
-
