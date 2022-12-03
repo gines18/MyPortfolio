@@ -44,11 +44,14 @@ body {
     color: var(--color);
     font-size: 25px;
     text-decoration: none;
+    letter-spacing: 3px;
+}
 
+.navbar-left ul li a:hover {
+    color: lime;
 }
 
 /* menu right */
-
 .navbar-right {
     grid-area: navbar-right;
 }
@@ -68,8 +71,12 @@ body {
 .navbar-right ul li a {
     text-decoration: none;
     color: var(--color);
+    letter-spacing: 3px;
 }
 
+.navbar-right ul li a:hover {
+    color: lime;
+}
 
 /* main photo */
 .photo {
@@ -268,4 +275,38 @@ body {
     height: 70px;
 }
 
+/* Testimonial */
+.Testimonial{
+    color: var(--color);
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.container-opinion{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.box1{
+    display: flex;
+    width: 33%;
+    height: 30vh;
+    color: var(--color);
+    align-items: center;
+    background-image: url(./img/opinion.png);
+   padding: 20px;
+   font-size: larger;
+}
+
+.box2{
+    display: flex;
+    width: 33%;
+    height: 30vh;
+    color: var(--color);
+    align-items: center;
+    background-image: url(./img/opinion.png);
+    padding: 20px;
+    font-size: larger;
+}
 
