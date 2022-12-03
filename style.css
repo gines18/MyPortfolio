@@ -66,8 +66,6 @@ body {
     display: grid;
     grid-template-columns: 0.5fr 0.9fr 1fr;
     grid-template-rows: 1fr 0.5fr 1fr;
-    margin-top: 81px;
-    margin-bottom: 220px;
     grid-template-areas:
         " myface myface . "
         " myface myface . "
@@ -89,13 +87,11 @@ body {
 
 .AboutMeText1 h2 {
     text-decoration: wavy underline lime;
-
 }
 
 .introduction {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
     width: 60%;
@@ -103,14 +99,13 @@ body {
     position: absolute;
     left: 740px;
     top: 500px;
-
 }
 
 .introduction h1 {
     font-size: 45px;
     color: var(--color);
 }
-
+/* Menu items/sections */
 .text {
     margin-top: 80px;
     color: var(--color);
@@ -118,58 +113,50 @@ body {
 }
 
 /* Portfolio */
-
 .Portfolio {
     display: grid;
-    margin-top: 40px;
+  
     margin-left: 80px;
     margin-right: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     grid-template-areas:
-        " gold1 gold1 three three "
-        " gold1 gold1    four    five  "
+        " one one three three "
+        " one one    four    five  "
         " two     two    four    five  "
     ;
 }
 
-.gold1 {
-    height: 300px;
-    grid-area: gold1;
-    background-image: url(./img/shopping-5217035__340.png);
-    background-size: cover;
+.one .two .three .four .five{
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+}
+
+.one {
+    height: 300px;
+    grid-area: one;
+    background-image: url(./img/shopping-5217035__340.png);
 }
 
 .two {
     grid-area: two;
     background-image: url(./img/seo-2394237__340.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .three {
     grid-area: three;
     background-image: url(./img/blog-793047__340.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .four {
     grid-area: four;
     background-image: url(./img/carousel-1684591__340.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .five {
     grid-area: five;
     background-image: url(./img/facebook-424521__340.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .Portfolio div {
@@ -182,40 +169,36 @@ body {
     width: 250px;
 }
 
-.gold1 p {
+.one p, .two p, .three p, .four p, .five p{
     background-color: var(--background-color);
     border-radius: 5% 5%;
     width: 260px;
 }
 
+.one p {
+    width: 260px;
+}
+
 .two p {
-    background-color: var(--background-color);
-    border-radius: 5% 5%;
     width: 173px;
 }
 
 .three p {
-    background-color: var(--background-color);
-    border-radius: 5% 5%;
     width: 130px;
 }
 
 .four p {
-    background-color: var(--background-color);
-    border-radius: 5% 5%;
     width: 146px;
 }
 
 .five p {
-    background-color: var(--background-color);
-    border-radius: 5% 5%;
     width: 60px;
 }
 
 /* about me */
 .About-Me {
-
     margin-top: 80px;
+    margin-bottom: 80px;
     color: var(--color);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -243,5 +226,26 @@ body {
     align-items: center;
     margin: 40px;
     font-size: 30px;
-
 }
+
+/* skills */
+.Skills{
+    color: var(--color);
+    margin-left: 80px;
+}
+
+.Skills-img{
+    margin-top: 40px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.Skills-img img{
+    height: 80px;
+}
+
+
